@@ -1,0 +1,20 @@
+{
+    "routes": [
+      {
+        "route": "/backend1",
+        "address": "http://localhost:9080"
+      },
+      {
+        "route": "/backend2",
+        "address": "http://localhost:9081"
+      },
+      {
+        "route": "/backend3",
+        "address": "http://localhost:9082"
+      },
+      {
+        "route": "/backend4",
+        "address": "http://localhost:9083"
+      }
+    ]
+}  

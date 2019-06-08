@@ -1,0 +1,41 @@
+<html>
+    <head></head>
+    <body>
+         <h1>Requests</h1>
+         <table>
+          <tr>  
+                <th>Start time</th>
+                <th>CPU required</th>
+                <th>Memory_required</th>
+                <th>Time required for completion</th>
+         </tr>     
+         <% for(var i = 0;i < requests.length;i++) { %>
+            <tr>
+                <td><%= requests[i].Starttime %></td>
+                <td><%= requests[i].CPU_required %></td>
+                <td><%= requests[i].Memory_required %></td>
+                <td><%= requests[i].time_required_for_completion %></td>
+            </tr>   
+          <% } %>
+         </table> 
+
+         <h1>Requests History</h1>
+
+         <table>
+                <tr>  
+                  <th>Start time</th>
+                  <th>CPU required</th>
+                  <th>Memory_required</th>
+                  <th>Time required for completion</th>
+               </tr>     
+          <% for(var i = 0;i < requests_history.length;i++) { %>
+                <tr>
+                    <td><%= requests_history[i].Starttime %></td>
+                    <td><%= requests_history[i].CPU_required %></td>
+                    <td><%= requests_history[i].Memory_required %></td>
+                    <td><%= requests_history[i].time_required_for_completion %></td>
+                </tr>   
+           <% } %>
+         </table> 
+    </body>
+</html>

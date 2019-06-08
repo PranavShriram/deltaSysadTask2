@@ -1,0 +1,21 @@
+http {
+   
+    upstream backend2 {
+        server 127.0.0.1:8082;
+       
+    }
+    
+    server {
+        
+        listen 9082;
+        location / {
+            proxy_pass http://backend2;
+        }
+    }
+   
+}
+events
+{
+   worker_connections 768;
+   #multi_accept on;
+}

@@ -1,0 +1,61 @@
+http {
+   
+    upstream backend {
+        server 127.0.0.1:8080;
+    
+    }
+    
+    server {
+        
+        listen 9080;
+        location / {
+            proxy_pass http://backend;
+        }
+    }
+      upstream backend1 {
+       
+        server 127.0.0.1:8081;
+      
+    }
+    
+    server {
+        
+        listen 9081;
+        location / {
+            proxy_pass http://backend1;
+        }
+    }
+         upstream backend2 {
+       
+        server 127.0.0.1:8082;
+      
+    }
+    
+    server {
+        
+        listen 9082;
+        location / {
+            proxy_pass http://backend2;
+        }
+    }
+  upstream backend3 {
+       
+        server 127.0.0.1:8083;
+      
+    }
+    
+    server {
+        
+        listen 9083;
+        location / {
+            proxy_pass http://backend3;
+        }
+    }
+
+
+}
+events
+{
+   worker_connections 768;
+   #multi_accept on;
+}
