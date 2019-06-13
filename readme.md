@@ -17,6 +17,6 @@ Delta Sysad Task 2
  
  1.Run the nginx confiiguration files nginxLoadBalancerConfig and nginx_config using the command "nginx -c <path_to_file>"
  
- 2.Open the terminal inside the folder where the project is present and run "node mongoinitialise.js" which adds four entries to nodes collection in the serverSetup database of mongodb.
+ 2.Open the terminal inside the folder where the project is present and run "node mongoInitialise.js" which adds four entries to nodes collection in the serverSetup database of mongodb.
  
  3.Run the python file python_script.py which sends post requests to the load balancer at regular intervals
